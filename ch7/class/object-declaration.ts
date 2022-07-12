@@ -6,12 +6,10 @@ class Rectangle {
     this.x = x;
     this.y = y;
   }
-  // 생성자 생성
 
   getArea() {
     return this.x * this.y;
   }
-  // 함수 생성
 }
 
 let rectangle = new Rectangle(1, 5);

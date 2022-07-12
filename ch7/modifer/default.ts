@@ -35,3 +35,25 @@ class Account {
     // return this.defaultBalance
   }
 }
+
+class MyAccount extends Account {
+  // 테스트
+  constructor() {
+    super();
+    // 1000원 적금
+    this.deposite(1000);
+    // 1000원 적금
+    this.setBalance = 1000;
+    console.log(`2번) 적금 : ${this.balance}, ${this.getBalance} /
+    이율 : ${this.interestRate}, ${this.getInterestRate()}% /
+    은행명 : ${this.bankName}
+    `);
+  }
+}
+
+let account = new Account();
+console.log(`1번) 적금 : ${account.balance}, ${account.getBalance} /
+이율 : ${account.interestRate}, ${account.getInterestRate()}% /
+`);
+
+let myAccount = new MyAccount();
